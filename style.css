@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pappins", sans-serif;
+  width: 100%;
+  height: 100vh;
+  gap: 20px;
+background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex-direction: column;
+  background-color: black;
+  border-radius: 20px;
+  width: 400px;
+  gap: 20PX;
+}
+.header{
+  width: 100%;
+  display:flex;
+  justify-content: flex-start;
+  border-bottom: 3px solid aliceblue;
+  padding-bottom: 10px;
+}
+.header img{
+  height: 50px;
+  width: 50px;
+  background-color: #333;
+  border-radius: 50%;
+  padding: 10px;
+}
+.questions_content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20PX;
+  color: aliceblue;
+}
+.questions_content h1{
+  font-size: 20px;
+}
+.questions_content p{
+  line-height: 2;
+}
+.choice{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10PX;
+}
+.choice span{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #333;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20PX;
+  transition: 0.5s all;
+}
+.choice span.active{
+  background-color: aliceblue;
+  color: #333;
+}
+.choice span:hover{
+  background-color: orangered;
+}
+
+/* From Uiverse.io by adamgiebl */ 
+button {
+  position: relative;
+  display: inline_block;/*inmine-block*/
+  margin: 15px;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: orangered;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid orangered;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 orangered;
+}
+
+button:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 orangered;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+.result{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20PX;
+}
+.pointe_view{
+  color: orangered;
+  border: 2px solid orangered;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20PX;
+  
+}
+.text_content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  flex-direction: column;
+  gap: 20PX;
+}
+.text_content p{
+  text-align: center;
+  line-height: 2;
+}
